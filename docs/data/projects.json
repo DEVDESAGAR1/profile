@@ -1,50 +1,23 @@
 [
   {
-    "title": "Large-scale AWS Migration",
-    "description": "Led migration of monolithic workloads to cloud-native infrastructure using Terraform, EKS, and secure VPCs.",
-    "techStack": "AWS, Terraform, EKS, Helm, New Relic",
-    "highlights": ["IaC with Terraform","EKS cluster setup","Helm deployment","Monitoring with New Relic"],
-    "repo": "#",
-    "preview": "assets/aws-migration.png"
+    "title":"Large-scale AWS Migration",
+    "description":"Migrated monolithic workloads to cloud-native infrastructure using Terraform, EKS, and secure VPCs.",
+    "techStack":"AWS, Terraform, EKS, Helm, New Relic",
+    "highlights":["IaC with Terraform","EKS cluster setup","Helm deployment","Monitoring with New Relic"],
+    "repo":"#"
   },
   {
-    "title": "Automated CI/CD Platform",
-    "description": "Developed pipelines for microservices using GitLab CI and GitHub Actions with Snyk integration.",
-    "techStack": "GitLab CI, GitHub Actions, Snyk, Octopus, Helm",
-    "highlights": ["Automated testing & deployment","Integrated Snyk for SAST","Zero-downtime deploys"],
-    "repo": "#",
-    "preview": "assets/ci-cd.png"
+    "title":"Automated CI/CD Platform",
+    "description":"Built pipelines for microservices using GitLab CI and GitHub Actions with Snyk integration.",
+    "techStack":"GitLab CI, GitHub Actions, Snyk, Octopus, Helm",
+    "highlights":["Automated testing & deployment","Integrated Snyk for SAST","Zero-downtime deploys"],
+    "repo":"#"
   },
   {
-    "title": "Monitoring & Incident Response",
-    "description": "Established observability using New Relic and Grafana, implemented alerts and runbooks.",
-    "techStack": "New Relic, Grafana, CloudWatch, Python",
-    "highlights": ["Real-time dashboards","Proactive alerts","Automated incident response"],
-    "repo": "#",
-    "preview": "assets/monitoring.png"
-  },
-  {
-    "title": "Infrastructure Cost Optimization",
-    "description": "Reduced AWS costs by 30% via resource optimization and reserved instances strategy.",
-    "techStack": "AWS, CloudWatch, Terraform",
-    "highlights": ["Right-sized instances","Automated shutdown policies","Reserved instance planning"],
-    "repo": "#",
-    "preview": "assets/aws-cost.png"
-  },
-  {
-    "title": "Security Automation & SAST",
-    "description": "Integrated Snyk and GitHub Advanced Security in CI/CD pipelines for proactive vulnerability detection.",
-    "techStack": "Snyk, GitHub Actions, Python",
-    "highlights": ["Automated security scans","Pull request vulnerability checks","SAST reporting automation"],
-    "repo": "#",
-    "preview": "assets/security.png"
-  },
-  {
-    "title": "Kubernetes Multi-Cluster Management",
-    "description": "Managed multi-cluster EKS deployments with Helm charts, automating namespace and secret management.",
-    "techStack": "Kubernetes, EKS, Helm, Terraform",
-    "highlights": ["Multi-cluster orchestration","Automated secret management","CI/CD integrated"],
-    "repo": "#",
-    "preview": "assets/k8s-cluster.png"
+    "title":"Monitoring & Incident Response",
+    "description":"Established observability using New Relic and Grafana, implemented alerts and runbooks.",
+    "techStack":"New Relic, Grafana, CloudWatch, Python",
+    "highlights":["Real-time dashboards","Proactive alerts","Automated incident response"],
+    "repo":"#"
   }
 ]
