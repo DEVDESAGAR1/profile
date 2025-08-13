@@ -1,0 +1,77 @@
+[
+  {
+    "name": "GitHub Copilot",
+    "image": "assets/github-copilot.png",
+    "issuer": "GitHub"
+  },
+  {
+    "name": "AI Agents Fundamentals",
+    "image": "assets/huggingface.png",
+    "issuer": "Hugging Face",
+    "credentialId": "devdesagar"
+  },
+  {
+    "name": "HashiCorp Certified: Terraform Associate (003)",
+    "image": "assets/terraform.png",
+    "issuer": "HashiCorp"
+  },
+  {
+    "name": "New Relic Verified Foundation (NVF)",
+    "image": "assets/newrelic.png",
+    "issuer": "New Relic",
+    "credentialId": "132845911"
+  },
+  {
+    "name": "AWS Certified AI Practitioner",
+    "image": "https://d0.awsstatic.com/logos/powered-by-aws.png",
+    "issuer": "Amazon Web Services (AWS)"
+  },
+  {
+    "name": "AWS Certified AI Practitioner Early Adopter",
+    "image": "https://d0.awsstatic.com/logos/powered-by-aws.png",
+    "issuer": "Amazon Web Services (AWS)"
+  },
+  {
+    "name": "GitHub Foundations",
+    "image": "assets/github.png",
+    "issuer": "GitHub"
+  },
+  {
+    "name": "[PCAP-31-03] PCAP – Certified Associate in Python Programming",
+    "image": "assets/python.png",
+    "issuer": "Python Developer",
+    "credentialId": "PCAP-31-03"
+  },
+  {
+    "name": "Professional Scrum Master",
+    "image": "assets/psm.png",
+    "issuer": "Scrum.org",
+    "credentialId": "605015"
+  },
+  {
+    "name": "Fundamentals of Digital Marketing",
+    "image": "assets/google.png",
+    "issuer": "Google Digital Unlocked",
+    "credentialId": "H6E PEA 2P9"
+  },
+  {
+    "name": "AWS Certified Cloud Practitioner",
+    "image": "https://d0.awsstatic.com/logos/powered-by-aws.png",
+    "issuer": "Amazon Web Services (AWS)"
+  },
+  {
+    "name": "AWS Certified Solutions Architect – Associate",
+    "image": "https://d0.awsstatic.com/logos/powered-by-aws.png",
+    "issuer": "Amazon Web Services (AWS)"
+  },
+  {
+    "name": "AWS Certified Developer – Associate",
+    "image": "https://d0.awsstatic.com/logos/powered-by-aws.png",
+    "issuer": "Amazon Web Services (AWS)"
+  },
+  {
+    "name": "HashiCorp Certified: Terraform Associate (002)",
+    "image": "assets/terraform.png",
+    "issuer": "HashiCorp"
+  }
+]
