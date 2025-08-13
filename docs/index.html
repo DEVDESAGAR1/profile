@@ -1,217 +1,151 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Sagar Devde — DevOps / SRE Engineer</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Sagar Devde — DevOps / SRE Engineer</title>
 
-  <!-- Google Font & Font Awesome -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/8b1f3b9b8a.js" crossorigin="anonymous"></script>
+<!-- Fonts & Icons -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/8b1f3b9b8a.js" crossorigin="anonymous"></script>
 
-  <link rel="stylesheet" href="themes/style.css">
-  <meta name="theme-color" content="#0b66ff"/>
+
+<!-- Styles -->
+<link rel="stylesheet" href="themes/styles.css">
+<meta name="theme-color" content="#0b66ff"/>
 </head>
 <body>
-  <header class="topbar">
-    <div class="brand">
-      <div class="logo-hex">SD</div>
-      <div>
-        <div class="name">Sagar Narhari Devde</div>
-        <div class="role">DevOps • SRE • Cloud Engineer</div>
+<header class="topbar">
+  <div class="brand">
+    <div class="logo-hex">SD</div>
+    <div>
+      <div class="name">Sagar Devde</div>
+      <div class="role">DevOps • SRE • Cloud Engineer</div>
+    </div>
+  </div>
+  <nav class="nav">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#resume">Resume</a>
+    <a href="#contact" class="cta">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <!-- Hero -->
+  <section id="hero" class="hero">
+    <div class="hero-left">
+      <h1>Hi — I’m <span class="neon-text">Sagar Devde</span>.</h1>
+      <p class="tagline">I build reliable, secure cloud platforms and CI/CD pipelines. AWS, Terraform, Kubernetes, observability — production-ready.</p>
+      <div class="hero-ctas">
+        <a href="#projects" class="btn neon-btn">See Projects</a>
+        <a href="#resume" class="btn neon-btn ghost">Download Resume</a>
+        <a href="https://www.linkedin.com/in/sagar-devde-17205213a/" target="_blank" class="btn neon-btn ghost"><i class="fab fa-linkedin"></i> LinkedIn</a>
       </div>
+      <ul class="quick-stats">
+        <li><strong data-target="7">0</strong>+ yrs Experience</li>
+        <li><strong data-target="5">0</strong> AWS Certifications</li>
+        <li><strong data-target="50">0</strong> Projects Completed</li>
+      </ul>
     </div>
 
-    <nav class="nav">
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#resume">Resume</a>
-      <a href="#contact" class="cta">Contact</a>
-    </nav>
-  </header>
-
-  <main>
-    <!-- Hero -->
-    <section id="hero" class="hero">
-      <div class="hero-left">
-        <h1>Hi — I’m <span>Sagar</span>.</h1>
-        <p class="tagline">I build reliable, secure cloud platforms and CI/CD pipelines. AWS, Terraform, Kubernetes, observability — production-ready.</p>
-        <div class="hero-ctas">
-          <a href="#projects" class="btn">See Projects</a>
-          <a href="#resume" class="btn ghost">Download Resume</a>
-        </div>
-
-        <ul class="quick-stats">
-          <li><strong>7+</strong> yrs Experience</li>
-          <li><strong>AWS</strong> Certified</li>
-          <li><strong>Terraform</strong>, Kubernetes</li>
-        </ul>
+    <div class="hero-right">
+      <!-- Profile Photo -->
+      <div class="profile-photo">
+        <img src="profile.jpg" alt="Sagar Devde">
       </div>
 
-      <div class="hero-right">
-        <div class="terminal-card">
-          <div class="term-head">
-            <span class="dot red"></span>
-            <span class="dot yellow"></span>
-            <span class="dot green"></span>
-          </div>
-          <pre class="term-body">
-$ git clone github.com/devdesagar/portfolio
-$ cd infra && terraform plan
-✔ migrate-prod (safe)
-✔ deploy: k8s / helm / newrelic
-          </pre>
+      <!-- Terminal card -->
+      <div class="terminal-card">
+        <div class="term-head">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
         </div>
+        <pre class="term-body">
+<span class="cursor">|</span>
+        </pre>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- About -->
-    <section id="about" class="panel">
-      <h2>About</h2>
-      <p>
-        DevOps & SRE Engineer focused on secure, scalable cloud solutions for regulated environments.
-        Comfortable with large-scale migrations, IaC (Terraform), container orchestration (Kubernetes), CI/CD, automation (Python/Bash), and observability (New Relic, CloudWatch).
-      </p>
+  <!-- About -->
+  <section id="about" class="panel">
+    <h2>About</h2>
+    <p>
+      DevOps & SRE Engineer focused on secure, scalable cloud solutions for regulated environments.
+      Experienced in managing large-scale migrations, IaC (Terraform), container orchestration (Kubernetes), CI/CD, automation (Python/Bash), and observability (New Relic, CloudWatch).
+    </p>
+  </section>
 
-      <div class="cards">
-        <div class="card">
-          <h3>What I do</h3>
-          <ul>
-            <li>Design & run AWS infrastructure at scale</li>
-            <li>Infrastructure as Code (Terraform / CloudFormation)</li>
-            <li>Containerize & orchestrate (Docker + Kubernetes)</li>
-            <li>CI/CD: GitLab Actions, GitHub, Octopus</li>
-          </ul>
-        </div>
+  <!-- Skills -->
+  <section id="skills" class="panel alt">
+    <h2>Skills</h2>
+    <div class="skill-grid">
+      <div class="skill neon-skill">AWS <small>EC2, S3, VPC, IAM, EKS, RDS</small></div>
+      <div class="skill neon-skill">Terraform <small>IaC / CloudFormation</small></div>
+      <div class="skill neon-skill">Kubernetes <small>Docker, EKS, Helm</small></div>
+      <div class="skill neon-skill">CI/CD <small>GitLab CI, GitHub Actions, Octopus</small></div>
+      <div class="skill neon-skill">Python / Bash</div>
+      <div class="skill neon-skill">Monitoring <small>New Relic, Grafana, CloudWatch</small></div>
+      <div class="skill neon-skill">Security <small>SAST, Snyk</small></div>
+    </div>
+  </section>
 
-        <div class="card">
-          <h3>Values</h3>
-          <ul>
-            <li>Reliability & automation</li>
-            <li>Security-first mindset</li>
-            <li>Observability & blameless postmortems</li>
-          </ul>
-        </div>
+  <!-- Projects -->
+  <section id="projects" class="panel">
+    <h2>Selected Projects</h2>
+    <div class="project-list">
+      <article class="project neon-card">
+        <h3>Large-scale AWS Migration</h3>
+        <p>Planned and executed migration of monolithic workloads to cloud-native infrastructure using Terraform, EKS, and secure VPC architecture for a regulated pharma customer.</p>
+        <p class="meta"><strong>Stack:</strong> AWS, Terraform, EKS, Helm, New Relic</p>
+      </article>
+      <article class="project neon-card">
+        <h3>Automated CI/CD Platform</h3>
+        <p>Built standardized pipelines for microservices with GitLab CI and GitHub Actions, integrated Snyk SAST, and automated deployments via Octopus/Helm charts.</p>
+        <p class="meta"><strong>Stack:</strong> GitLab CI, GitHub Actions, Snyk, Octopus Deploy, Helm</p>
+      </article>
+      <article class="project neon-card">
+        <h3>Monitoring & Incident Response</h3>
+        <p>Established observability for distributed systems using New Relic and Grafana, implemented alerting and runbooks, reducing MTTR via automation.</p>
+        <p class="meta"><strong>Stack:</strong> New Relic, Grafana, CloudWatch, Python</p>
+      </article>
+    </div>
+  </section>
 
-        <div class="card">
-          <h3>Contact</h3>
-          <p><a href="mailto:devdesagar@gmail.com">devdesagar@gmail.com</a></p>
-          <p>Based in Mumbai 🇮🇳</p>
-        </div>
-      </div>
-    </section>
+  <!-- Resume -->
+  <section id="resume" class="panel alt">
+    <h2>Resume</h2>
+    <div class="resume-actions">
+      <a href="resume.pdf" class="btn neon-btn">Download PDF</a>
+      <a href="mailto:devdesagar@gmail.com" class="btn neon-btn ghost">Email Me</a>
+    </div>
+  </section>
 
-    <!-- Skills -->
-    <section id="skills" class="panel alt">
-      <h2>Skills</h2>
-      <div class="skill-grid">
-        <div class="skill">
-          <h4>AWS</h4>
-          <small>EC2, S3, VPC, IAM, EKS, RDS</small>
-        </div>
-        <div class="skill">
-          <h4>Infrastructure as Code</h4>
-          <small>Terraform, CloudFormation</small>
-        </div>
-        <div class="skill">
-          <h4>Containers</h4>
-          <small>Docker, Kubernetes (EKS), Helm</small>
-        </div>
-        <div class="skill">
-          <h4>CI / CD</h4>
-          <small>GitLab CI, GitHub Actions, Octopus</small>
-        </div>
-        <div class="skill">
-          <h4>Languages</h4>
-          <small>Python, Bash</small>
-        </div>
-        <div class="skill">
-          <h4>Observability</h4>
-          <small>New Relic, CloudWatch, Grafana</small>
-        </div>
-        <div class="skill">
-          <h4>Security</h4>
-          <small>Snyk, SAST, best practices</small>
-        </div>
-      </div>
-    </section>
+  <!-- Contact -->
+  <section id="contact" class="panel contact">
+    <h2>Get in touch</h2>
+    <form id="contactForm" action="#" onsubmit="return handleForm(event)">
+      <input type="text" id="name" placeholder="Your name" required>
+      <input type="email" id="email" placeholder="Email" required>
+      <textarea id="message" placeholder="Tell me about the opportunity" rows="5" required></textarea>
+      <button type="submit" class="btn neon-btn">Send</button>
+    </form>
+  </section>
 
-    <!-- Projects -->
-    <section id="projects" class="panel">
-      <h2>Selected Projects</h2>
+  <footer class="footer">
+    <div>© <span id="year"></span> Sagar Devde — DevOps • SRE</div>
+    <div class="socials">
+      <a href="https://github.com/devdesagar1" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/sagar-devde-17205213a/" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </footer>
+</main>
 
-      <div class="project-list">
-        <article class="project">
-          <div class="project-left">
-            <h3>Large-scale AWS Migration</h3>
-            <p>Planned and executed migration of monolithic workloads to cloud-native infrastructure using Terraform, EKS, and secure VPC architecture for a regulated pharma customer.</p>
-            <p class="meta"><strong>Stack:</strong> AWS, Terraform, EKS, Helm, New Relic</p>
-          </div>
-          <div class="project-right">
-            <a class="pill">IaC</a>
-            <a class="pill">Kubernetes</a>
-            <a class="pill">Observability</a>
-          </div>
-        </article>
 
-        <article class="project">
-          <div class="project-left">
-            <h3>Automated CI/CD Platform</h3>
-            <p>Built standardized pipelines for microservices with GitLab CI and GitHub Actions, integrated Snyk SAST and automated deployments via Octopus/Helm charts.</p>
-            <p class="meta"><strong>Stack:</strong> GitLab CI, GitHub Actions, Snyk, Octopus Deploy, Helm</p>
-          </div>
-          <div class="project-right">
-            <a class="pill">CI/CD</a>
-            <a class="pill">Security</a>
-            <a class="pill">Automation</a>
-          </div>
-        </article>
-
-        <article class="project">
-          <div class="project-left">
-            <h3>Monitoring & Incident Response</h3>
-            <p>Established observability for distributed systems using New Relic and Grafana, implemented alerting and runbooks, reduced MTTR through automation and runbook-driven incident playbooks.</p>
-            <p class="meta"><strong>Stack:</strong> New Relic, Grafana, CloudWatch, Python</p>
-          </div>
-          <div class="project-right">
-            <a class="pill">Monitoring</a>
-            <a class="pill">Runbooks</a>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- Resume -->
-    <section id="resume" class="panel alt">
-      <h2>Resume</h2>
-      <div class="resume-wrap">
-        <div class="resume-left">
-          <h3>Experience Highlights</h3>
-          <ul>
-            <li>7+ years in IT — DevOps & SRE roles, enterprise experience with regulated clients.</li>
-            <li>Led large-scale AWS migrations using Terraform and Kubernetes.</li>
-            <li>Architected CI/CD pipelines for microservices (GitLab, GitHub Actions, Octopus).</li>
-            <li>Observability & monitoring with New Relic, Grafana, CloudWatch; reduced MTTR via automation.</li>
-          </ul>
-
-          <h3>Certifications</h3>
-          <ul>
-            <li>AWS certifications (multiple)</li>
-            <li>Terraform Certification</li>
-          </ul>
-        </div>
-
-        <div class="resume-right">
-          <h3>Technical Summary</h3>
-          <p><strong>Cloud:</strong> AWS (EKS, VPC, IAM, RDS, S3)</p>
-          <p><strong>IaC:</strong> Terraform, CloudFormation</p>
-          <p><strong>Containers:</strong> Docker, Kubernetes, Helm</p>
-          <p><strong>CI/CD & Infra Automation:</strong> GitLab CI, GitHub Actions, Octopus, Python, Bash</p>
-          <p><strong>Observability:</strong> New Relic, Grafana, CloudWatch</p>
-        </div>
-      </div>
-
+<script src="themes/script.js"></script>
       <div class="resume-actions">
         <a href="resume.pdf" class="btn">Download PDF</a>
         <a href="mailto:devdesagar@gmail.com" class="btn ghost">Email Me</a>
@@ -241,6 +175,5 @@ $ cd infra && terraform plan
     </footer>
   </main>
 
-  <script src="themes/script.js"></script>
 </body>
 </html>
