@@ -1,16 +1,15 @@
-// Responsive menu toggle
 document.addEventListener('DOMContentLoaded', function() {
+  // Responsive menu toggle
   const menuToggle = document.querySelector('.menu-toggle');
   const navLinks = document.querySelector('.nav-links');
   const menuIcon = document.querySelector('.menu-icon');
-
   if (menuToggle && navLinks && menuIcon) {
     menuToggle.addEventListener('change', function() {
       navLinks.style.display = menuToggle.checked ? 'flex' : '';
     });
   }
 
-  // Projects and Certifications dynamic rendering
+  // Dynamic Projects and Certifications (render certifications ONLY from certifications.json file)
   Promise.all([
     fetch('data/projects.json').then(r => r.json()),
     fetch('data/certifications.json').then(r => r.json())
@@ -26,14 +25,14 @@ document.addEventListener('DOMContentLoaded', function() {
         card.innerHTML = `
           <b>${proj.title}</b>
           <p>${proj.desc}</p>
-          <small>Tech Stack: ${proj.tech}</small><br>
-          <a href="${proj.repo}" target="_blank">GitHub Repo</a>
+          <small>Tech: ${proj.tech}</small><br>
+          ${proj.repo && proj.repo !== "#" ? `<a href="${proj.repo}" target="_blank" style="color:var(--primary);font-size:0.97em;">GitHub Repo</a>` : ""}
         `;
         projectsGrid.appendChild(card);
       });
     }
 
-    // Render Certs
+    // Render Certifications ONLY from certifications.json file (no synthetic certs)
     if (certsGrid && Array.isArray(certs)) {
       certs.forEach(cert => {
         const card = document.createElement('div');
@@ -42,9 +41,12 @@ document.addEventListener('DOMContentLoaded', function() {
         certsGrid.appendChild(card);
       });
     }
+  }).catch(e => {
+    document.getElementById('projects-grid').innerHTML = "<div style='color:red;'>Could not load data/projects.json or data/certifications.json. Check file paths and GitHub Pages publish settings.</div>";
+    document.getElementById('certs-grid').innerHTML = "";
   });
 
-  // Vibrant contact form: fake submit
+  // Contact form interaction
   const contactForm = document.querySelector('.contact-form');
   if (contactForm) {
     contactForm.addEventListener('submit', function(e) {

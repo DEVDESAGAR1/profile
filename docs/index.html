@@ -7,74 +7,140 @@
   <link rel="stylesheet" href="theme/style.css"/>
 </head>
 <body>
-  <nav class="navbar">
-    <div class="brand">SD Sagar Devde</div>
+  <nav class="coder-navbar">
+    <div class="navbar-left">
+      <span class="editor-dot red"></span>
+      <span class="editor-dot yellow"></span>
+      <span class="editor-dot green"></span>
+      <span class="brand"><span class="bracket">{</span> Sagar Devde <span class="bracket">}</span></span>
+    </div>
     <input type="checkbox" id="menu-toggle" class="menu-toggle">
     <label for="menu-toggle" class="menu-icon">&#9776;</label>
     <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#certs">Certifications</a></li>
-      <li><a href="#resume">Resume</a></li>
-      <li><a href="#contact" class="contact-btn">Contact</a></li>
+      <li><a href="#about"><span class="nav-icon">🏷️</span> About</a></li>
+      <li><a href="#skills"><span class="nav-icon">💻</span> Skills</a></li>
+      <li><a href="#projects"><span class="nav-icon">🛠️</span> Projects</a></li>
+      <li><a href="#certs"><span class="nav-icon">🎓</span> Certifications</a></li>
+      <li><a href="#resume"><span class="nav-icon">📄</span> Resume</a></li>
+      <li><a href="#contact" class="contact-btn"><span class="nav-icon">✉️</span> Contact</a></li>
     </ul>
   </nav>
 
   <section class="hero">
     <div class="hero-text">
-      <h1>Hi — I’m Sagar Devde.</h1>
-      <p>I build reliable, secure cloud platforms and CI/CD pipelines. AWS, Terraform, Kubernetes, observability — production-ready.</p>
+      <pre class="terminal-greeting">
+<span class="prompt-symbol">$</span> <span class="typed-text">Hi, I'm Sagar Devde.</span>
+<span class="prompt-symbol">$</span> <span class="terminal-desc">DevOps • SRE • Cloud Engineer</span>
+      </pre>
+      <p>
+        <span class="hero-keywords">I design, automate, and secure cloud-native platforms.<br>
+        <span class="highlight">AWS</span>, <span class="highlight">Terraform</span>, <span class="highlight">Kubernetes</span>, <span class="highlight">CI/CD</span>, <span class="highlight">Python</span> — bringing code to production, at scale.
+        </span>
+      </p>
       <div class="actions">
-        <a href="#projects">See Projects</a>
-        <a href="resume.pdf" target="_blank">Download Resume</a>
-        <a href="https://linkedin.com/in/devdesagar1" target="_blank">LinkedIn</a>
+        <a href="#projects" class="hero-btn">🚀 See Projects</a>
+        <a href="resume.pdf" target="_blank" class="hero-btn">📄 Download Resume</a>
+        <a href="https://linkedin.com/in/devdesagar1" target="_blank" class="hero-btn">🔗 LinkedIn</a>
       </div>
       <p class="hero-stats">
-        8+ yrs Experience &nbsp; | &nbsp; 5 AWS Certifications &nbsp; | &nbsp; 55 Projects Completed
+        <span>8+ yrs Experience</span>
+        <span>• 4 AWS Certifications</span>
+        <span>• 50+ Projects Delivered</span>
       </p>
     </div>
-    <img src="profile.jpg" alt="Sagar Devde" class="profile-img"/>
+    <img src="profile-photo.jpg" alt="Sagar Devde" class="profile-img"/>
   </section>
 
   <section class="section" id="about">
     <div class="section-title">About</div>
-    <p>DevOps & SRE Engineer focused on secure, scalable cloud solutions for regulated environments. Experienced in managing large-scale migrations, IaC (Terraform), container orchestration (Kubernetes), CI/CD, automation (Python/Bash), and observability (New Relic, CloudWatch).</p>
+    <p>
+      <span class="code-tag">&lt;about&gt;</span>
+      <span>
+        DevOps & SRE Engineer specializing in building robust, secure, and scalable cloud solutions for regulated industries. I lead infrastructure migrations, automate delivery pipelines, manage Kubernetes at scale, and implement best-in-class monitoring and incident response. Passionate about code quality, team enablement, and delivering business value through technology.
+      </span>
+      <span class="code-tag">&lt;/about&gt;</span>
+    </p>
   </section>
 
   <section class="section" id="skills">
     <div class="section-title">Skills</div>
-    <div>
-      <span class="skill-badge">AWS</span>
-      <span class="skill-badge">Terraform</span>
-      <span class="skill-badge">Kubernetes</span>
-      <span class="skill-badge">CI/CD</span>
-      <span class="skill-badge">Python/Bash</span>
-      <span class="skill-badge">Monitoring</span>
-      <span class="skill-badge">Security</span>
+    <div class="skills-category">
+      <h4><span class="category-icon">☁️</span> Cloud & Platforms</h4>
+      <div>
+        <span class="skill-badge">AWS (EC2, VPC, IAM, EKS, RDS, S3, Lambda, CloudFormation)</span>
+        <span class="skill-badge">Docker</span>
+        <span class="skill-badge">Kubernetes (EKS)</span>
+      </div>
+    </div>
+    <div class="skills-category">
+      <h4><span class="category-icon">🔧</span> Infrastructure as Code</h4>
+      <div>
+        <span class="skill-badge">Terraform (Modules, Workspaces, State Management)</span>
+        <span class="skill-badge">Helm Charts</span>
+        <span class="skill-badge">CloudFormation</span>
+        <span class="skill-badge">Ansible</span>
+      </div>
+    </div>
+    <div class="skills-category">
+      <h4><span class="category-icon">🚀</span> CI/CD & Automation</h4>
+      <div>
+        <span class="skill-badge">GitHub Actions</span>
+        <span class="skill-badge">GitLab CI</span>
+        <span class="skill-badge">Jenkins</span>
+        <span class="skill-badge">Octopus Deploy</span>
+        <span class="skill-badge">Snyk / Security Automation</span>
+      </div>
+    </div>
+    <div class="skills-category">
+      <h4><span class="category-icon">🧑‍💻</span> Programming & Scripting</h4>
+      <div>
+        <span class="skill-badge">Python (automation, scripting, APIs)</span>
+        <span class="skill-badge">Bash / Shell Scripting</span>
+        <span class="skill-badge">Go (microservices)</span>
+        <span class="skill-badge">YAML / JSON</span>
+      </div>
+    </div>
+    <div class="skills-category">
+      <h4><span class="category-icon">📊</span> Monitoring & Observability</h4>
+      <div>
+        <span class="skill-badge">Prometheus & Grafana</span>
+        <span class="skill-badge">New Relic</span>
+        <span class="skill-badge">AWS CloudWatch</span>
+        <span class="skill-badge">ELK Stack</span>
+      </div>
+    </div>
+    <div class="skills-category">
+      <h4><span class="category-icon">🔐</span> Security & Compliance</h4>
+      <div>
+        <span class="skill-badge">IAM Policy Design</span>
+        <span class="skill-badge">SAST (Snyk, CodeQL)</span>
+        <span class="skill-badge">Audit & Compliance Automation</span>
+      </div>
+    </div>
+    <div class="skills-category">
+      <h4><span class="category-icon">🤝</span> Soft Skills</h4>
+      <div>
+        <span class="skill-badge">Technical Leadership</span>
+        <span class="skill-badge">Agile & Scrum</span>
+        <span class="skill-badge">Stakeholder Communication</span>
+        <span class="skill-badge">Documentation & Training</span>
+      </div>
     </div>
   </section>
 
   <section class="section" id="projects">
     <div class="section-title">Selected Projects</div>
-    <div class="card-grid" id="projects-grid">
-      <!-- Projects will be dynamically injected here -->
-    </div>
+    <div class="card-grid" id="projects-grid"></div>
   </section>
-
   <section class="section" id="certs">
     <div class="section-title">Certifications</div>
-    <div class="card-grid" id="certs-grid">
-      <!-- Certifications will be dynamically injected here -->
-    </div>
+    <div class="card-grid" id="certs-grid"></div>
   </section>
-
   <section class="section" id="resume">
     <div class="section-title">Resume</div>
     <a class="resume-btn" href="resume.pdf" target="_blank">Download PDF</a>
-    <a class="resume-btn" href="mailto:youremail@example.com">Email Me</a>
+    <a class="resume-btn" href="mailto:devdesagar@gmail.com">Email Me</a>
   </section>
-
   <section class="section contact-section" id="contact">
     <div class="section-title">Get in touch</div>
     <form class="contact-form" autocomplete="off">
@@ -86,8 +152,8 @@
       <button type="submit" class="contact-btn-gradient">Send Message</button>
     </form>
   </section>
-
   <footer>
+    <span class="footer-code">&lt;/&gt;</span>
     &copy; 2025 Sagar Devde — DevOps • SRE
   </footer>
   <script src="theme/script.js"></script>
