@@ -12,8 +12,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Projects and Certifications dynamic rendering
   Promise.all([
-    fetch('projects.json').then(r => r.json()),
-    fetch('certs.json').then(r => r.json())
+    fetch('data/projects.json').then(r => r.json()),
+    fetch('data/certifications.json').then(r => r.json())
   ]).then(([projects, certs]) => {
     const projectsGrid = document.getElementById('projects-grid');
     const certsGrid = document.getElementById('certs-grid');
