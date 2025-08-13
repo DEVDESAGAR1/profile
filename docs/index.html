@@ -1,61 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sagar Devde — DevOps / SRE Engineer</title>
-  <link rel="stylesheet" href="theme/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sagar Devde - DevOps & SRE Portfolio</title>
+  <link rel="stylesheet" href="theme/style.css"/>
 </head>
 <body>
-
-  <!-- Background Canvas -->
-  <canvas id="background"></canvas>
-
-  <!-- Navigation -->
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#certifications">Certifications</a>
-    <a href="#contact">Contact</a>
+  <nav class="navbar">
+    <div class="brand">SD Sagar Devde</div>
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#certs">Certifications</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#contact" class="contact-btn">Contact</a></li>
+    </ul>
   </nav>
 
-  <!-- Hero Section -->
-  <section id="home">
-    <h1>Hi, I’m Sagar — DevOps & SRE Engineer</h1>
-    <p>I specialize in building scalable cloud infrastructure, automating deployments, and implementing CI/CD pipelines with high reliability and security. Passionate about DevOps culture, observability, and cloud-native technologies.</p>
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Hi — I’m Sagar Devde.</h1>
+      <p>I build reliable, secure cloud platforms and CI/CD pipelines. AWS, Terraform, Kubernetes, observability — production-ready.</p>
+      <div class="actions">
+        <a href="#projects">See Projects</a>
+        <a href="resume.pdf" target="_blank">Download Resume</a>
+        <a href="https://linkedin.com/in/devdesagar1" target="_blank">LinkedIn</a>
+      </div>
+      <p class="hero-stats">
+        7+ yrs Experience &nbsp; | &nbsp; 5 AWS Certifications &nbsp; | &nbsp; 50 Projects Completed
+      </p>
+    </div>
+    <img src="profile-photo.jpg" alt="Sagar Devde" class="profile-img"/>
   </section>
 
-  <!-- Skills Section -->
-  <section id="skills">
-    <h2>Skills</h2>
-    <div class="skills-container" id="skills-container"></div>
+  <section class="section" id="about">
+    <div class="section-title">About</div>
+    <p>DevOps & SRE Engineer focused on secure, scalable cloud solutions for regulated environments. Experienced in managing large-scale migrations, IaC (Terraform), container orchestration (Kubernetes), CI/CD, automation (Python/Bash), and observability (New Relic, CloudWatch).</p>
   </section>
 
-  <!-- Projects Section -->
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="projects-container" id="projects-container"></div>
-  </section>
-
-  <!-- Certifications Section -->
-  <section id="certifications">
-    <h2>Certifications</h2>
-    <div class="certifications-container" id="certifications-container"></div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact">
-    <h2>Get in Touch</h2>
-    <div class="contact-card">
-      <p>Hi! I’m always open to discussing DevOps, SRE, or exciting cloud projects. Feel free to reach out through any of the channels below:</p>
-      <p><strong>Email:</strong> <a href="mailto:devdesagar@gmail.com">devdesagar@gmail.com</a></p>
-      <p><strong>GitHub:</strong> <a href="https://github.com/devdesagar1" target="_blank">github.com/devdesagar1</a></p>
-      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/devdesagar1/" target="_blank">linkedin.com/in/devdesagar1</a></p>
-      <p><strong>Portfolio:</strong> <a href="https://devdesagar1.github.io/profile/" target="_blank">devdesagar1.github.io/profile</a></p>
+  <section class="section" id="skills">
+    <div class="section-title">Skills</div>
+    <div>
+      <span class="skill-badge">AWS</span>
+      <span class="skill-badge">Terraform</span>
+      <span class="skill-badge">Kubernetes</span>
+      <span class="skill-badge">CI/CD</span>
+      <span class="skill-badge">Python/Bash</span>
+      <span class="skill-badge">Monitoring</span>
+      <span class="skill-badge">Security</span>
     </div>
   </section>
 
+  <section class="section" id="projects">
+    <div class="section-title">Selected Projects</div>
+    <div class="card-grid" id="projects-grid">
+      <!-- Projects will be dynamically injected here -->
+    </div>
+  </section>
+
+  <section class="section" id="certs">
+    <div class="section-title">Certifications</div>
+    <div class="card-grid" id="certs-grid">
+      <!-- Certifications will be dynamically injected here -->
+    </div>
+  </section>
+
+  <section class="section" id="resume">
+    <div class="section-title">Resume</div>
+    <a class="resume-btn" href="resume.pdf" target="_blank">Download PDF</a>
+    <a class="resume-btn" href="mailto:youremail@example.com">Email Me</a>
+  </section>
+
+  <section class="section contact-section" id="contact">
+    <div class="section-title">Get in touch</div>
+    <form class="contact-form" autocomplete="off">
+      <textarea placeholder="Tell me about the opportunity" required></textarea>
+      <div class="form-row">
+        <input type="text" placeholder="Your name" required>
+        <input type="email" placeholder="Email" required>
+      </div>
+      <button type="submit" class="contact-btn-gradient">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 Sagar Devde — DevOps • SRE
+  </footer>
   <script src="theme/script.js"></script>
 </body>
 </html>
