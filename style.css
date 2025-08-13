@@ -1,0 +1,106 @@
+:root{
+  --bg: #ffffff;
+  --accent: #0b66ff; /* blue */
+  --muted: #6b7280;
+  --card: #f8fbff;
+  --glass: rgba(11,102,255,0.06);
+  --mono: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family:var(--mono);
+  background:linear-gradient(180deg, #ffffff 0%, #f6f9ff 100%);
+  color:#0f1724;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+/* Topbar */
+.topbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:18px 36px;
+  backdrop-filter: blur(6px);
+  position:sticky;
+  top:0;
+  background:rgba(255,255,255,0.6);
+  border-bottom:1px solid rgba(11,102,255,0.06);
+  z-index:30;
+}
+.brand{display:flex;gap:14px;align-items:center}
+.logo-hex{
+  width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#3db0ff);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:18px;
+  box-shadow: 0 6px 18px rgba(11,102,255,0.12);
+}
+.name{font-weight:700}
+.role{font-size:13px;color:var(--muted)}
+
+.nav a{margin-left:18px;text-decoration:none;color:#0f1724;font-weight:600}
+.nav a.cta{padding:8px 12px;background:var(--accent);color:white;border-radius:8px}
+.nav a.ghost{border:1px solid rgba(11,102,255,0.08)}
+
+main{max-width:1100px;margin:28px auto;padding:0 24px}
+
+/* Hero */
+.hero{display:flex;gap:24px;align-items:center;justify-content:space-between;padding:36px 0}
+.hero-left{flex:1}
+.hero-right{width:380px}
+.hero h1{font-size:36px;margin:0;font-weight:800}
+.hero h1 span{color:var(--accent)}
+.tagline{color:var(--muted);margin-top:10px}
+.btn{display:inline-block;padding:10px 16px;border-radius:8px;background:var(--accent);color:white;text-decoration:none;font-weight:700;margin-right:10px}
+.btn.ghost{background:transparent;color:var(--accent);border:1px solid rgba(11,102,255,0.12)}
+.quick-stats{display:flex;gap:16px;margin-top:18px;list-style:none;padding:0}
+.quick-stats li{background:var(--card);padding:10px 14px;border-radius:10px;font-weight:600}
+
+/* Terminal card */
+.terminal-card{background:linear-gradient(180deg,#001f5a,#002a8f);color:#e6f0ff;padding:14px;border-radius:12px;box-shadow: 0 10px 30px rgba(2,6,23,0.15);transform:translateY(0);transition:transform .25s}
+.terminal-card:hover{transform:translateY(-6px)}
+.term-head{display:flex;gap:8px;margin-bottom:10px}
+.term-head .dot{width:12px;height:12px;border-radius:999px;display:inline-block}
+.dot.red{background:#ff6b6b}
+.dot.yellow{background:#ffd166}
+.dot.green{background:#8ce99a}
+.term-body{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:13px;line-height:1.5;margin:0}
+
+/* Panels */
+.panel{padding:40px 0;border-top:1px solid rgba(11,102,255,0.04)}
+.panel.alt{background:linear-gradient(180deg,#fbfdff,#ffffff)}
+.panel h2{margin:0 0 16px;font-size:22px}
+.cards{display:flex;gap:16px;margin-top:16px}
+.card{background:var(--card);padding:18px;border-radius:12px;flex:1}
+
+/* Skills */
+.skill-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin-top:18px}
+.skill{background:linear-gradient(180deg,#fff,#f7fbff);padding:12px;border-radius:10px;border:1px solid rgba(11,102,255,0.04)}
+.skill h4{margin:0}
+.skill small{color:var(--muted)}
+
+/* Projects */
+.project-list{display:flex;flex-direction:column;gap:12px;margin-top:14px}
+.project{display:flex;justify-content:space-between;gap:16px;padding:14px;border-radius:12px;background:linear-gradient(180deg,#fff,#f7fbff);align-items:center;border:1px solid rgba(11,102,255,0.04)}
+.pill{display:inline-block;padding:6px 10px;border-radius:999px;background:var(--glass);font-weight:700;margin-left:6px}
+
+/* Resume */
+.resume-wrap{display:flex;gap:18px;flex-wrap:wrap}
+.resume-left, .resume-right{flex:1;min-width:260px;background:var(--card);padding:14px;border-radius:10px}
+
+/* Contact */
+.contact-form{display:flex;flex-direction:column;gap:12px;max-width:680px}
+.contact-form input, .contact-form textarea{padding:12px;border-radius:8px;border:1px solid rgba(11,102,255,0.06);font-size:14px}
+.contact-form button{align-self:flex-start}
+
+/* Footer */
+.footer{display:flex;justify-content:space-between;align-items:center;padding:20px 0;color:var(--muted);font-size:14px}
+.socials a{margin-left:12px;color:var(--muted);text-decoration:none}
+
+/* Responsive */
+@media (max-width:880px){
+  .hero{flex-direction:column}
+  .hero-right{width:100%}
+  .nav{display:none}
+}
