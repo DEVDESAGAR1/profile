@@ -1,63 +1,73 @@
-document.addEventListener('DOMContentLoaded', () => {
+// ---------- Skills Data ----------
+const skillsData = [
+  { name: "AWS Cloud", level: "90%" },
+  { name: "Terraform / IaC", level: "85%" },
+  { name: "Kubernetes / Docker", level: "80%" },
+  { name: "CI/CD Pipelines", level: "90%" },
+  { name: "Scripting (Python/Bash)", level: "85%" },
+  { name: "Monitoring & Observability", level: "80%" }
+];
 
-  // Footer year
-  const yearElem = document.getElementById('year');
-  if(yearElem) yearElem.textContent = new Date().getFullYear();
+// ---------- Typing Effect with Cursor and Prefix ----------
+function typeText(element, text, speed = 50, prefix = "> ", callback = null) {
+  let i = 0;
+  element.textContent = prefix;
+  const cursor = document.createElement('span');
+  cursor.classList.add('cursor');
+  element.appendChild(cursor);
 
-  // Animate quick stats
-  const counters = document.querySelectorAll('.quick-stats strong');
-  counters.forEach(counter => {
-    const target = +counter.getAttribute('data-target');
-    let count = 0;
-    const increment = target / 100;
-    const updateCount = () => {
-      if(count < target){
-        count += increment;
-        counter.innerText = Math.ceil(count);
-        requestAnimationFrame(updateCount);
-      } else { counter.innerText = target; }
-    };
-    updateCount();
-  });
+  const timer = setInterval(() => {
+    element.textContent = prefix + text.substring(0, i + 1);
+    element.appendChild(cursor);
+    i++;
+    if (i >= text.length) {
+      clearInterval(timer);
+      if (callback) callback();
+    }
+  }, speed);
+}
 
-  // Load Certifications
-  fetch('data/certifications.json')
-    .then(res => res.json())
-    .then(certs => {
-      const certList = document.getElementById('cert-list');
-      certs.forEach(cert => {
-        const li = document.createElement('li');
-        li.innerHTML = `<strong>${cert.name}</strong> — <span>${cert.issuer}</span>`;
-        certList.appendChild(li);
-      });
-    })
-    .catch(err => console.error(err));
+// ---------- Render Skills ----------
+const skillsContainer = document.getElementById('skills-container');
+skillsData.forEach(skill => {
+  const div = document.createElement('div');
+  div.classList.add('skill');
+  div.innerHTML = `<h3>${skill.name}</h3><div class="skill-bar"><div style="width:0;"></div></div><span class="skill-text"></span>`;
+  skillsContainer.appendChild(div);
 
-  // Load Projects
-  fetch('data/projects.json')
-    .then(res => res.json())
-    .then(projects => {
-      const projectList = document.getElementById('project-list');
-      projects.forEach(p => {
-        const card = document.createElement('div');
-        card.className = 'project-card';
-        card.innerHTML = `
-          <h3>${p.title}</h3>
-          <p>${p.description}</p>
-          <p><strong>Tech Stack:</strong> ${p.techStack}</p>
-          <ul>${p.highlights.map(h=>`<li>${h}</li>`).join('')}</ul>
-          <a href="${p.repo}" target="_blank">GitHub Repo</a>
-        `;
-        projectList.appendChild(card);
-      });
-    })
-    .catch(err => console.error(err));
-
+  setTimeout(() => {
+    div.querySelector('.skill-bar div').style.width = skill.level;
+    typeText(div.querySelector('.skill-text'), skill.level, 50, '> ');
+  }, 200);
 });
 
-// Contact form placeholder
-function handleForm(e){
-  e.preventDefault();
-  alert("Thank you! Form submission is placeholder for now.");
-  return false;
-}
+// ---------- Load Projects ----------
+fetch('data/projects.json')
+  .then(response => response.json())
+  .then(projects => {
+    const container = document.getElementById('projects-container');
+    projects.forEach((proj, index) => {
+      const div = document.createElement('div');
+      div.classList.add('project');
+      div.innerHTML = `<h3>${proj.title}</h3><p class="project-text"></p><p><a href="${proj.link}" target="_blank">View Project</a></p>`;
+      container.appendChild(div);
+
+      setTimeout(() => {
+        const p = div.querySelector('.project-text');
+        typeText(p, proj.description, 30, '> ');
+      }, index * 400);
+    });
+  });
+
+// ---------- Load Certifications ----------
+fetch('data/certifications.json')
+  .then(response => response.json())
+  .then(certs => {
+    const container = document.getElementById('certifications-container');
+    certs.forEach(cert => {
+      const div = document.createElement('div');
+      div.classList.add('cert');
+      div.textContent = cert.name;
+      container.appendChild(div);
+    });
+  });
