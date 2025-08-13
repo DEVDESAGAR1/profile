@@ -1,23 +1,47 @@
 [
   {
-    "title":"Large-scale AWS Migration",
-    "description":"Migrated monolithic workloads to cloud-native infrastructure using Terraform, EKS, and secure VPCs.",
-    "techStack":"AWS, Terraform, EKS, Helm, New Relic",
-    "highlights":["IaC with Terraform","EKS cluster setup","Helm deployment","Monitoring with New Relic"],
-    "repo":"#"
+    "title": "CI/CD Automation Pipeline",
+    "description": "Designed fully automated CI/CD pipelines using GitHub Actions and Terraform for multi-environment cloud deployments.",
+    "link": "https://devdesagar1.github.io/profile/"
   },
   {
-    "title":"Automated CI/CD Platform",
-    "description":"Built pipelines for microservices using GitLab CI and GitHub Actions with Snyk integration.",
-    "techStack":"GitLab CI, GitHub Actions, Snyk, Octopus, Helm",
-    "highlights":["Automated testing & deployment","Integrated Snyk for SAST","Zero-downtime deploys"],
-    "repo":"#"
+    "title": "Cloud Monitoring Dashboard",
+    "description": "Implemented centralized monitoring dashboards with New Relic and Grafana to track multi-region cloud infrastructure health.",
+    "link": "https://devdesagar1.github.io/profile/"
   },
   {
-    "title":"Monitoring & Incident Response",
-    "description":"Established observability using New Relic and Grafana, implemented alerts and runbooks.",
-    "techStack":"New Relic, Grafana, CloudWatch, Python",
-    "highlights":["Real-time dashboards","Proactive alerts","Automated incident response"],
-    "repo":"#"
+    "title": "Kubernetes Cluster Deployment",
+    "description": "Deployed highly available Kubernetes clusters on AWS using Terraform and Helm charts with automated scaling policies.",
+    "link": "https://devdesagar1.github.io/profile/"
+  },
+  {
+    "title": "Infrastructure as Code with Terraform",
+    "description": "Built modular Terraform templates for AWS infrastructure including VPCs, EC2 instances, RDS, and S3 buckets with secure IAM roles.",
+    "link": "https://devdesagar1.github.io/profile/"
+  },
+  {
+    "title": "Automated Cloud Security Compliance",
+    "description": "Implemented automated security scans and compliance checks in AWS using Terraform, AWS Config, and Snyk for continuous governance.",
+    "link": "https://devdesagar1.github.io/profile/"
+  },
+  {
+    "title": "High-Availability Web Application Deployment",
+    "description": "Deployed HA web applications with auto-scaling, load balancing, and disaster recovery across AWS regions using Terraform and Kubernetes.",
+    "link": "https://devdesagar1.github.io/profile/"
+  },
+  {
+    "title": "Log Aggregation and Observability Pipeline",
+    "description": "Created centralized logging and observability pipelines using CloudWatch, SumoLogic, and Grafana for proactive incident detection.",
+    "link": "https://devdesagar1.github.io/profile/"
+  },
+  {
+    "title": "Serverless Application Deployment",
+    "description": "Deployed serverless microservices using AWS Lambda, API Gateway, DynamoDB, and Terraform for cost-efficient and scalable architecture.",
+    "link": "https://devdesagar1.github.io/profile/"
+  },
+  {
+    "title": "Disaster Recovery Automation",
+    "description": "Built automated disaster recovery workflows for AWS workloads using Terraform, S3 replication, and Lambda scripts to ensure high availability.",
+    "link": "https://devdesagar1.github.io/profile/"
   }
 ]
