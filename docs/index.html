@@ -9,9 +9,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 <script src="https://kit.fontawesome.com/8b1f3b9b8a.js" crossorigin="anonymous"></script>
 
-
 <!-- Styles -->
-<link rel="stylesheet" href="themes/style.css">
+<link rel="stylesheet" href="theme/style.css">
 <meta name="theme-color" content="#0b66ff"/>
 </head>
 <body>
@@ -27,6 +26,7 @@
     <a href="#about">About</a>
     <a href="#skills">Skills</a>
     <a href="#projects">Projects</a>
+    <a href="#aws-certifications">AWS Certs</a>
     <a href="#resume">Resume</a>
     <a href="#contact" class="cta">Contact</a>
   </nav>
@@ -96,27 +96,17 @@
   <!-- Projects -->
   <section id="projects" class="panel">
     <h2>Selected Projects</h2>
-    <div class="project-list">
-      <article class="project neon-card">
-        <h3>Large-scale AWS Migration</h3>
-        <p>Planned and executed migration of monolithic workloads to cloud-native infrastructure using Terraform, EKS, and secure VPC architecture for a regulated pharma customer.</p>
-        <p class="meta"><strong>Stack:</strong> AWS, Terraform, EKS, Helm, New Relic</p>
-      </article>
-      <article class="project neon-card">
-        <h3>Automated CI/CD Platform</h3>
-        <p>Built standardized pipelines for microservices with GitLab CI and GitHub Actions, integrated Snyk SAST, and automated deployments via Octopus/Helm charts.</p>
-        <p class="meta"><strong>Stack:</strong> GitLab CI, GitHub Actions, Snyk, Octopus Deploy, Helm</p>
-      </article>
-      <article class="project neon-card">
-        <h3>Monitoring & Incident Response</h3>
-        <p>Established observability for distributed systems using New Relic and Grafana, implemented alerting and runbooks, reducing MTTR via automation.</p>
-        <p class="meta"><strong>Stack:</strong> New Relic, Grafana, CloudWatch, Python</p>
-      </article>
-    </div>
+    <div id="project-list" class="project-list"></div>
+  </section>
+
+  <!-- AWS Certifications -->
+  <section id="aws-certifications" class="panel alt">
+    <h2>AWS Certifications</h2>
+    <ul id="cert-list" class="cert-list"></ul>
   </section>
 
   <!-- Resume -->
-  <section id="resume" class="panel alt">
+  <section id="resume" class="panel">
     <h2>Resume</h2>
     <div class="resume-actions">
       <a href="resume.pdf" class="btn neon-btn">Download PDF</a>
@@ -144,36 +134,6 @@
   </footer>
 </main>
 
-
-<script src="themes/script.js"></script>
-      <div class="resume-actions">
-        <a href="resume.pdf" class="btn">Download PDF</a>
-        <a href="mailto:devdesagar@gmail.com" class="btn ghost">Email Me</a>
-      </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="panel contact">
-      <h2>Get in touch</h2>
-      <p>Looking for a DevOps/SRE engineer? Want to collaborate?</p>
-
-      <form id="contactForm" action="#" onsubmit="return handleForm(event)" class="contact-form">
-        <input type="text" id="name" placeholder="Your name" required>
-        <input type="email" id="email" placeholder="Email" required>
-        <textarea id="message" placeholder="Tell me about the opportunity" rows="5" required></textarea>
-        <button type="submit" class="btn">Send</button>
-      </form>
-      <p class="note">Or email me directly: <a href="mailto:devdesagar@gmail.com">devdesagar@gmail.com</a></p>
-    </section>
-
-    <footer class="footer">
-      <div>© <span id="year"></span> Sagar Devde — DevOps • SRE</div>
-      <div class="socials">
-        <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
-        <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-      </div>
-    </footer>
-  </main>
-
+<script src="theme/script.js"></script>
 </body>
 </html>
