@@ -1,10 +1,58 @@
 [
-  {"name":"AWS Certified Solutions Architect – Associate","issuer":"AWS"},
-  {"name":"AWS Certified Developer – Associate","issuer":"AWS"},
-  {"name":"AWS Certified Cloud Practitioner","issuer":"AWS"},
-  {"name": "AWS AI Practitioner","issuer":"AWS" },
-  {"name":"HashiCorp Certified: Terraform Associate","issuer":"HashiCorp"},
-  {"name":"New Relic Verified Foundation (NVF)","issuer":"New Relic"},
-  {"name":"PCAP – Certified Associate in Python Programming","issuer":"Python Developer"},
-  {"name":"Professional Scrum Master","issuer":"Scrum.org"}
+  {
+    "title": "GitHub Copilot",
+    "issuer": "GitHub"
+  },
+  {
+    "title": "AI Agents Fundamentals",
+    "issuer": "Hugging Face"
+  },
+  {
+    "title": "HashiCorp Certified: Terraform Associate (003)",
+    "issuer": "HashiCorp"
+  },
+  {
+    "title": "New Relic Verified Foundation (NVF)",
+    "issuer": "New Relic"
+  },
+  {
+    "title": "AWS Certified AI Practitioner",
+    "issuer": "Amazon Web Services (AWS)"
+  },
+  {
+    "title": "AWS Certified AI Practitioner Early Adopter",
+    "issuer": "Amazon Web Services (AWS)"
+  },
+  {
+    "title": "GitHub Foundations",
+    "issuer": "GitHub"
+  },
+  {
+    "title": "[PCAP-31-03] PCAP – Certified Associate in Python Programming",
+    "issuer": "Python Developer"
+  },
+  {
+    "title": "Professional Scrum Master",
+    "issuer": "Scrum.org"
+  },
+  {
+    "title": "Fundamentals of Digital Marketing",
+    "issuer": "Google Digital Unlocked"
+  },
+  {
+    "title": "AWS Certified Cloud Practitioner",
+    "issuer": "Amazon Web Services (AWS)"
+  },
+  {
+    "title": "AWS Certified Solutions Architect – Associate",
+    "issuer": "Amazon Web Services (AWS)"
+  },
+  {
+    "title": "AWS Certified Developer – Associate",
+    "issuer": "Amazon Web Services (AWS)"
+  },
+  {
+    "title": "HashiCorp Certified: Terraform Associate (002)",
+    "issuer": "HashiCorp"
+  }
 ]
