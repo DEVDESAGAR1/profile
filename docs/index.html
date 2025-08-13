@@ -9,8 +9,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 <script src="https://kit.fontawesome.com/8b1f3b9b8a.js" crossorigin="anonymous"></script>
 
+
 <!-- Styles -->
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="themes/styles.css">
 <meta name="theme-color" content="#0b66ff"/>
 </head>
 <body>
@@ -143,6 +144,36 @@
   </footer>
 </main>
 
-<script src="script.js"></script>
+
+<script src="themes/script.js"></script>
+      <div class="resume-actions">
+        <a href="resume.pdf" class="btn">Download PDF</a>
+        <a href="mailto:devdesagar@gmail.com" class="btn ghost">Email Me</a>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="panel contact">
+      <h2>Get in touch</h2>
+      <p>Looking for a DevOps/SRE engineer? Want to collaborate?</p>
+
+      <form id="contactForm" action="#" onsubmit="return handleForm(event)" class="contact-form">
+        <input type="text" id="name" placeholder="Your name" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <textarea id="message" placeholder="Tell me about the opportunity" rows="5" required></textarea>
+        <button type="submit" class="btn">Send</button>
+      </form>
+      <p class="note">Or email me directly: <a href="mailto:devdesagar@gmail.com">devdesagar@gmail.com</a></p>
+    </section>
+
+    <footer class="footer">
+      <div>© <span id="year"></span> Sagar Devde — DevOps • SRE</div>
+      <div class="socials">
+        <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </footer>
+  </main>
+
 </body>
 </html>
